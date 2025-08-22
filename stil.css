@@ -1,5 +1,5 @@
 body {
-    animation: crazybg 2s infinite linear;
+    animation: bg 0.1s infinite linear;
 }
 
 img {
@@ -17,7 +17,7 @@ img:hover {
     filter: hue-rotate(360deg) brightness(2) contrast(2);
 }
 
-@keyframes crazybg {
+@keyframes bg {
     0% { background-color: lime; }
     20% { background-color: magenta; }
     40% { background-color: cyan; }
@@ -25,3 +25,4 @@ img:hover {
     80% { background-color: orange; }
     100% { background-color: black; }
 }
+
