@@ -1,0 +1,25 @@
+body {
+    animation-name: bgg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+img {
+    width: 500px;
+    margin: auto;
+    display: block;
+    padding-top: 10%;
+    transition: 2s ease;
+}
+
+img:hover {
+    transform: scale(1.5) rotate(360deg);
+    border-radius: 15px;
+}
+
+@keyframes bgg {
+    25% {background-color: aqua;}
+    50% {background-color: pink;}
+    75% {background-color: red;}
+    100% {background-color: black;}
+}
