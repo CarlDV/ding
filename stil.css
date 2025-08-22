@@ -1,25 +1,27 @@
 body {
-    animation-name: bgg;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation: crazybg 2s infinite linear;
 }
 
 img {
-    width: 500px;
+    width: 80%;
     margin: auto;
     display: block;
-    padding-top: 10%;
-    transition: 2s ease;
+    padding-top: 20%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: hue-rotate(0deg) brightness(1) contrast(1);
 }
 
 img:hover {
-    transform: scale(1.5) rotate(360deg);
-    border-radius: 15px;
+    transform: scale(2) rotate(720deg) skew(20deg, 10deg);
+    border-radius: 50%;
+    filter: hue-rotate(360deg) brightness(2) contrast(2);
 }
 
-@keyframes bgg {
-    25% {background-color: aqua;}
-    50% {background-color: pink;}
-    75% {background-color: red;}
-    100% {background-color: black;}
+@keyframes crazybg {
+    0% { background-color: lime; }
+    20% { background-color: magenta; }
+    40% { background-color: cyan; }
+    60% { background-color: yellow; }
+    80% { background-color: orange; }
+    100% { background-color: black; }
 }
